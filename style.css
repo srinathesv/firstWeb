@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+#icon {
+  padding: 20px;
+  background-color: DarkSlateGrey; 
+  border-top: 3px solid whitesmoke;
+  text-decoration-color: whitesmoke;
+}
+
+#header {
+  background-color: DarkSlateGrey;
+  font-family: 'Lucida Console', Courier, monospace;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+#para1 {
+  border: 2px solid black;
+  outline: #4caf50 solid 20px;
+  padding: 20px;
+
+  text-align: center;
+}
+
+
