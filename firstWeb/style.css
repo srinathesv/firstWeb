@@ -1,36 +1,54 @@
-body {
-  margin: 0;
+html, body {
+  margin:0px;
+  height:100%;
 }
-#icon a:hover {
-  background-color: silver;
-  color: #000;
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Overlock', cursive;
+  margin: 0;
+  height:100%;
+  background: fixed;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 #icon {
-  padding: 10px;
+  padding-bottom: 10px ;
+  display: block;
   background-color: DarkSlateGrey; 
   position: relative; 
-    text-decoration-color: whitesmoke;
+  color: white;
+  text-align: center;
 }
 
+#icon a:hover {
+  background-color: lightslategray;
+  color: black;;
+}
+
+
+#icon > a{
+  color: whitesmoke;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
 #header {
   background-color: DarkSlateGrey;
-  font-family: 'Lucida Console', Courier, monospace;
-  padding: 20px;
+  padding: 25px;
   margin: 0;
   text-align: center;
 }
+
+
 
 #para1 {
 
   border: 3px solid black;
   outline: lightslategray 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: large;
   padding: 20px;
-
   text-align: center;
 }
-
-
-
 

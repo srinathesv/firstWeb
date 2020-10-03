@@ -2,132 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      img:hover {
-         opacity: 0.8;
-         }
-         
-         * {
-              box-sizing: border-box;
-          }
-      div.gallery {
-        margin: 20px;
-        border: 0.5px solid rgb(12, 12, 12);
-        float: left;
-        width: 200px;
-      }
-      
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
-      
-      div.gallery img {
-        width: 100%;
-        height: 100%
-      }
-      div.video {
-        margin-left: -350px;
-        float: left;
-      }
-      
-      div.desc {
-        padding: 10px;
-        text-align: center;
-      }
-      body{
-        background: url(bg.jpg);
-        
-      }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    img:hover {
+      opacity: 0.8;
+    }
 
+    .gallery {
+      margin: 20px;
+      border: 0.5px solid rgb(12, 12, 12);
+      float: left;
+      width: 300px;
+      height: 400px;
+      background-color: white;
+    }
 
-      </style>
-    <title>Document</title>
+    .desc {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .gallery img,
+    video {
+      width: 300px;
+      padding: 5px;
+      align-items: center;
+      height: 350px;
+    }
+
+    
+  </style>
+  <title>Document</title>
 </head>
 
 <body>
-    <div style="background-color: DarkSlateGrey; justify-content: space-between">
-        <h1 id="header" style="color: whitesmoke">Welcome to My WebPage</h1>
-    </div>
+  <div style="background-color: DarkSlateGrey; justify-content: space-between">
+    <h1 id="header" style="color: whitesmoke" style="align-content: center;">My Profile</h1>
 
-    <div id="icon" > 
-      <a href="index.html" style="
-          color: whitesmoke;
-          padding: 20px;
-          text-decoration: none;
-          font-size: 18px;
-        ">
-          About
-      </a>
-      <a href="profile.html" style="
-          color: whitesmoke;
-          padding: 20px;
-          text-decoration: none;
-          font-size: 18px;
-        ">Profile</a>
-      <a href="interersts.html" style="
-          color: whitesmoke;
-          padding: 20px;
-          text-decoration: none;
-          font-size: 18px;
-        ">Interests</a>
-      <a href="photo.html" style="
-          color: whitesmoke;
-          padding: 20px;
-          text-decoration: none;
-          font-size: 18px;
-        ">Photo Gallery</a>
-      </div>
-    
-   <h1 style="color: rgb(0, 0, 0); padding: 100px;" > My Photo Gallery</h1>
-    
-   <div class="gallery">
-    <a target="_self" href="IMG_7060.JPG">
-      <img src="IMG_7060.JPG" alt="HotelTaj" style="width: 200px; height: 300px;">
+  </div>
+
+  <div id="icon">
+    <a href="index.html"> About </a>
+    <a href="profile.html">Profile</a>
+    <a href="interersts.html">Interests</a>
+    <a href="photo.html">Photo Gallery</a>
+  </div>
+
+  <h1 style="padding: 100px;"> My Photo Gallery</h1>
+
+  <div class="gallery">
+    <a target="_self" href="assets/IMG_7060.JPG">
+      <img src="assets/IMG_7060.JPG" alt="HotelTaj">
     </a>
     <div class="desc">HotelTaj, Mumbai</div>
   </div>
 
   <div class="gallery">
-    <a target="_self" href="HECV5569.JPG">
-      <img src="HECV5569.JPG" alt="SkyHigh" style="width: 200px; height: 300px;">
+    <a target="_self" href="assets/HECV5569.JPG">
+      <img src="assets/HECV5569.JPG" alt="SkyHigh">
     </a>
-    <div class="desc">Heaven of clouds </div>
-  </div> 
-  
-  <div class="gallery">
-    <a target="_self" href="IMG_2248.jpg">
-      <img src="IMG_2248.jpg" alt="Cloudy Day" style="width: 200px; height: 300px;">
-    </a>
-    <div class="desc">Cloudy Day</div>
+    <div class="desc">Evening Scene </div>
   </div>
-  
+
   <div class="gallery">
-    <a target="_self" href="IMG_2711.JPG">
-      <img src="IMG_2711.JPG" alt="Flower" style="width: 200px; height: 300px;">
+    <a target="_self" href="assets/IMG_2248.jpg">
+      <img src="assets/IMG_2248.jpg" alt="Cloudy Day">
+    </a>
+    <div class="desc">Shore Temple, Mahabalipuram</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="assets/IMG_2711.JPG">
+      <img src="assets/IMG_2711.JPG" alt="Flower">
     </a>
     <div class="desc">Blooming of Flower</div>
   </div>
 
   <div class="gallery">
-    <a target="_self" href="IMG_1692.JPG">
-      <img src="IMG_1692.JPG"  alt="SkyHigh" style="width: 200px; height: 300px;">
+    <a target="_self" href="assets/IMG_1692.JPG">
+      <img src="assets/IMG_1692.JPG" alt="SkyHigh">
     </a>
     <div class="desc">Heaven of clouds </div>
   </div>
-  
-  
-  <div class="video">
-    <a target="_self" href="timelapse.mp4">
-   <video style="width: 200px; height: 200px; margin-top: 400px;margin-left: -830px;" controls>
-        <source src="timelapse.mp4" type="video/mp4">
-      </video>
-    </a>
-  </div> 
 
-  
+  <div class="gallery video">
+    <video controls>
+      <source src="assets/IMG-0154.mp4" type="video/mp4">
+    </video>
+    <div class="desc"> Chennai Evening Traffic </div>
+  </div>
+
+  <div class="gallery video">
+    <video controls>
+      <source src="assets/timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="desc"> Sky Time-Lapse video</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="assets/IMG_7059.JPG">
+      <img src="assets/IMG_7059.JPG" alt="SkyHigh">
+    </a>
+    <div class="desc"> Marine Drive </div>
+  </div>
+
+ 
+
 </body>
 
 </html>

@@ -6,8 +6,24 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body{
-            background-color: lavenderblush;
+        .button {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: red;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: darkslategrey;
+            color: white;
         }
     </style>
     <title>Document</title>
@@ -15,55 +31,52 @@
 
 <body>
     <div style="background-color: DarkSlateGrey; justify-content: space-between">
-        <h1 id="header" style="color: whitesmoke">Welcome to My WebPage</h1>
+        <h1 id="header" style="color: whitesmoke" style="align-content: center;">My Profile</h1>
+
     </div>
 
-    <div id="icon" > 
-        <a href="index.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">
-            About
-        </a>
-        <a href="profile.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Profile</a>
-        <a href="interersts.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Interests</a>
-        <a href="photo.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Photo Gallery</a>
-        </div>
+    <div id="icon">
+        <a href="index.html"> About </a>
+        <a href="profile.html">Profile</a>
+        <a href="interersts.html">Interests</a>
+        <a href="photo.html">Photo Gallery</a>
+    </div>
 
-
-    <h1>My Interests</h1>
+    <h1 style="padding: 30px;">My Interests</h1>
     <p>
-        <strong> Watching Movies, some of my watchlist are </strong>
+        <strong style="padding: 20px;"> Watching Movies, some from my watchlist </strong>
     <ul>
         <li>Massan(2015) </li>
         <li> Maska(2020) </li>
         <li> 5 Feet Apart(2019) </li>
         <li> Irreplacable You(2018) </li>
     </ul>
-    <strong> Listening Music. </strong>
+    <strong style="padding: 20px;"> Listening Music. </strong>
     <ul>
         <li> Pop </li>
         <li> Dance </li>
-    </ul>
+        <p style="padding: 20px;"> Check out my playlist <a class="button" href="https://wynk.in/u/zFoVSMW8k"
+                target="_blank"> Wynk </a> </p>
 
+    </ul>
+    <strong style="padding: 20px;"> PC games </strong>
+    <ul>
+        <li> Counter Strike: Global Offensive</li>
+        <li> Call of Duty </li>
+        <li> Need for Speed</li>
+        <li> Assasin's Creed </li>
+        <li> Apex Legends </li>
+        
+    </ul>
+    
+    <strong style="padding: 20px;"> Travel and Photography </strong>
+    <ul>
+        <li> visit Photo Gallery tab</li>
+    </ul>
     </p>
+    <footer>
+        <p>@Srinathesv </p>
+    </footer>
 </body>
 
 </html>

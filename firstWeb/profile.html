@@ -6,66 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <style>
-        p.outset {
-        border-style: outset;
-        background-color: lavenderblush;
+        IMG.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
         }
 
+        .column {
+            float: left;
+            padding: 10px;
+        }
 
+        /* Left and right column */
+        .column.side {
+            width: 25%;
+        }
+
+        /* Middle column */
+        .column.middle {
+            text-indent: 50px;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: darkslategrey;
+            color: white;
+        }
     </style>
-    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div style="background-color: DarkSlateGrey; justify-content: space-between">
-        <h1 id="header" style="color: whitesmoke">Welcome to My WebPage</h1>
+        <h1 id="header" style="color: whitesmoke" style="align-content: center;">My Profile</h1>
+
     </div>
 
-    <div id="icon" > 
-        <a href="index.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;">
-            About
-        </a>
-        <a href="profile.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Profile</a>
-        <a href="interersts.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Interests</a>
-        <a href="photo.html" style="
-            color: whitesmoke;
-            padding: 20px;
-            text-decoration: none;
-            font-size: 18px;
-          ">Photo Gallery</a>
+    <div id="icon">
+        <a href="index.html"> About </a>
+        <a href="profile.html">Profile</a>
+        <a href="interersts.html">Interests</a>
+        <a href="photo.html">Photo Gallery</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Education Details</h2>
+            <p>
+                Post Graduation(prsent-2022): MSIT, IIIT-Hyderabad <br>
+                Under Graduation (2016-2020): SCSVMV University, Kanchipuram . <br>
+
+
+            </p>
         </div>
 
-    <div>
+        <div class="column middle">
+            <p>
+                Currently in first year of my post graduation in Master of Science in Information Technology,
+                IIIT-Hyderabad.
+                I have done my Bachelor's from Sri Chandrasekharendra Saraswati Viswa Maha Vidhyalaya(SCSVMV
+                University), Kanchipuram in the stream of Computer Science and Engineering with 7.3 cgpa. </p>
+            <p>
+                My feild of interersts are Networks and Information Security.Attended summer Training in Networks and
+                feild communications at Oil and Natural Gas Corporation Pvt. Limited (ONGC), Rajahmundry. <br>
+                <br>
 
-       
-        <p class="outset" >
-            <a href="https://www.linkedin.com/in/srinath-esv/" style="padding: 50px;">
-                <img src="https://www.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png"
-                    alt="Images" width="100px" height="100px" />
-            </a>
-            <br />
-            
-            <a href="https://www.instagram.com/srinathesv/" style="padding: 50px;">
-                <img src="https://www.iconfinder.com/icons/2959748/download/png/64" alt="Image" width="50px" height="50px"    
-                Follow me on Instagram!/>
-            </a>
-        </p>
+                <img class="displayed" src="assets/WNWF3623.JPG" alt="My Image" style="text-align: center;"
+                    width="300px" height="400">
+
+
+            </p>
+        </div>
+
+
+        <div class="column side">
+
+            <div style="color: white;font-size: 50px; text-align: right;">
+                <a href="https://www.linkedin.com/in/srinath-esv/" target="_blank" style="padding: 50px;">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <br>
+                <a href="https://www.instagram.com/srinathesv/" target="_blank" style="padding: 50px;">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <br>
+                <a href="https://github.com/srinathesv" target="_blank" style="padding: 50px;">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>@Srinathesv </p>
+    </footer>
+
+
+
+
+
 </body>
 
 </html>
